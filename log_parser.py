@@ -1,4 +1,5 @@
 errors = []
+warn = []
 
 # ask = int(input("Choose options, print 1 or 2 or 3 1)errors/2).../3).../ "))
 
@@ -9,16 +10,24 @@ def readlog():
             if "ERROR" in line:
                 errors.append(line)
 
+
+def count_warnings():
+    with open("sample.log") as file:
+        lines = file.readlines()
+        for line in lines:
+            if "WARNING" in line:
+                warn.append(line)
+
+
 if __name__=="__main__": #Якщо ти запустиш log_parser.py напряму — код у if __name__ == "__main__" виконається, Якщо ж ти імпортуєш його через import log_parser у main.py — код НЕ виконається.
-    ask = int(input("Choose options, print 1 or 2 or 3 1)errors/2).../3).../ "))
+    ask = int(input("Choose options, print 1 or 2 or 3\n 1)errors\n2)Warnings\n3)...\n "))
     if ask == 1:
         readlog()
         print(errors)
     elif ask == 2:
-        print()
+        count_warnings()
+        print(warn)
     elif ask ==3:
         print()
     else:
         print("Choose correct option")
-
-    
