@@ -10,5 +10,15 @@ def readlog():
                 errors.append(line)
 
 if __name__=="__main__": #Якщо ти запустиш log_parser.py напряму — код у if __name__ == "__main__" виконається, Якщо ж ти імпортуєш його через import log_parser у main.py — код НЕ виконається.
-    readlog()
-    print(errors)
+    ask = int(input("Choose options, print 1 or 2 or 3 1)errors/2).../3).../ "))
+    if ask == 1:
+        readlog()
+        print(errors)
+    elif ask == 2:
+        print()
+    elif ask ==3:
+        print()
+    else:
+        print("Choose correct option")
+
+    
