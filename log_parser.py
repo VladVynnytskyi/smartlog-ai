@@ -25,8 +25,7 @@ def find_ips():
             found_ips = re.findall(r'\b(?:\d{1,3}\.){3}\d{1,3}\b', line)
             for ip in found_ips:
                 ips.add(ip)
-        print(ips)
-
+        print(ips) 
 
 if __name__ == "__main__":
     ask = int(input("Choose options, print 1 or 2 or 3\n"
