@@ -27,6 +27,12 @@ def find_ips():
                 ips.add(ip)
         print(ips) 
 
+
+with open("ips.txt", "w") as f:
+    for ip in ips:
+        f.write(ip + "\n")
+
+
 if __name__ == "__main__":
     ask = int(input("Choose options, print 1 or 2 or 3\n"
                     "1) Errors\n"
@@ -43,3 +49,5 @@ if __name__ == "__main__":
         find_ips()
     else:
         print("Choose correct option")
+
+print(f"Errors: {len(errors)}, Warnings: {len(warn)}, IPs: {len(ips)}")
