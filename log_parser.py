@@ -2,6 +2,7 @@ import re
 
 errors = []
 warn = []
+ips = []
 
 def read_log():
     with open("sample.log", "r") as file:
@@ -27,11 +28,11 @@ def find_ips():
                 ips.add(ip)
         print(ips) 
 
+print(ips)
 
 with open("ips.txt", "w") as f:
     for ip in ips:
         f.write(ip + "\n")
-
 
 if __name__ == "__main__":
     ask = int(input("Choose options, print 1 or 2 or 3\n"
