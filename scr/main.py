@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from scr.reader import read_log
 from scr.warnings import count_warnings
 from scr.ip_extractor import find_ips
