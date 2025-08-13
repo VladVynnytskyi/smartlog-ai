@@ -26,3 +26,17 @@ Jul  8 21:39:07 host1 kernel: [12345.678901] eth0: link down
         at java.base/java.lang.Thread.run(Thread.java:1589)
 [2025-07-08 21:39:11.000] INFO api - Heartbeat OK
 [2025-07-08 21:39:11.000] INFO (message repeated 5 times): Heartbeat OK
+[2025-07-08 21:39:12.321] WARNING fs - Disk /dev/sda1 at 92% (threshold=90%)
+[2025-07-08 21:39:13.000] INFO backup - Rotating logs...
+=== log rotated at 2025-07-08 21:39:13 ===
+[2025-07-08 21:39:13.100] INFO service - Restarting after config change version=1.4.2
+[2025-07-08 21:39:12.050] INFO clock - (out-of-order) NTP adjustment -120ms
+[1731079154] DEBUG metrics - cpu=0.73 mem=418Mi rx=12.4Mi tx=9.8Mi   # epoch timestamp
+[2025/07/08 21:39:15] WARNING auth - Too many failed attempts user=vlad ip=192.168.0.1 lockout=5m
+[2025-07-08 21:39:16.009] ERROR proxy - 502 Bad Gateway upstream=10.0.0.12:8080 path=/v1/data req_id=req-7fb0
+[2025-07-08 21:39:17.555] FATAL storage - RAID degraded: disk=sdb serial=XYZ123456
+[2025-07-08 21:39:18.000] INFO audit - sudo: polina : TTY=pts/1 ; PWD=/home/polina ; USER=root ; COMMAND=/bin/systemctl restart api
+[2025-07-08 21:39:18.900] INFO locale - Привіт! Перевірка юнікоду: æøå Żźć🙂
+[2025-07-08 21:39:19.000] INFO api	- Tab separator test	path=/v1/tabs	elapsed_ms=3
+[2025-07-08 21:39:19.500] ERROR ??? - (corrupted line) �\u0000\u0007@@@###
+-- Reboot --
