@@ -1,9 +1,9 @@
 [2025-07-08 21:32:01] INFO - User login successful
-[2025-07-08 21:33:14] WARNING - Disk usage high
-[2025-07-08 21:34:44] ERROR - Failed to connect to server
+[2025-07-08 21:33:14] WARNING - Disk usage highERROR - Failed to connect to server
 [2025-07-08 21:35:12] INFO - File uploaded successfully
 [2025-07-08 21:36:22] INFO - Scheduled backup completed
-[2025-07-08 21:37:01] ERROR - Backup failed
+[2025-07-08 21:37:01] ERROR
+[2025-07-08 21:34:44]  - Backup failed
 [2025-07-08 21:38:47] WARNING - CPU temperature high
 [INFO] User login from 192.168.0.1
 [WARNING] Suspicious activity from 10.0.0.5
