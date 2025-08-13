@@ -9,3 +9,12 @@
 [WARNING] Suspicious activity from 10.0.0.5
 [ERROR] Connection failed from 192.168.0.1
 [INFO] Backup completed by 172.16.100.8
+[2025-07-08 21:39:01.123] DEBUG auth(pid=2140 tid=7) - Start login user_id=42 session_id=sess-abc req_id=req-7f9a trace_id=tr-001 span_id=sp-001
+[2025-07-08 21:39:02.011] NOTICE scheduler(host=app-1) - Nightly job queued job=backup full=true
+[2025-07-08 21:39:02.532] INFO api - GET /v1/files/123 status=200 bytes=8342 elapsed_ms=154 req_id=req-7f9b
+[2025-07-08 21:39:03.004] WARNING security - Port scan detected from 2001:db8::dead:beef:1337 on ports=22,80,443
+[2025-07-08 21:39:04.777] ERROR db - Query timeout on db=primary elapsed_ms=5021 req_id=req-7fa0
+[2025-07-08 21:39:05.000] CRITICAL app - Out of memory (OOMKilled) container=api-7d9b pod=api-7d9b-5xz4l node=k8s-02
+[2025-07-08 21:39:05.100] INFO storage - Upload completed file=/data/report.csv sha256=3e7c... size=120304 bytes elapsed_ms=912
+{"ts":"2025-07-08T21:39:06.345Z","level":"error","service":"api","msg":"DB timeout","request_id":"req-7fa1","elapsed_ms":5000,"host":"app-1","retry":2}
+Jul  8 21:39:07 host1 kernel: [12345.678901] eth0: link down
