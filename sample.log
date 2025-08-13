@@ -18,3 +18,11 @@
 [2025-07-08 21:39:05.100] INFO storage - Upload completed file=/data/report.csv sha256=3e7c... size=120304 bytes elapsed_ms=912
 {"ts":"2025-07-08T21:39:06.345Z","level":"error","service":"api","msg":"DB timeout","request_id":"req-7fa1","elapsed_ms":5000,"host":"app-1","retry":2}
 Jul  8 21:39:07 host1 kernel: [12345.678901] eth0: link down
+10.0.0.8 - - [08/Jul/2025:21:39:08 +0000] "POST /login HTTP/1.1" 401 73 "-" "curl/8.0.1"
+[2025-07-08T21:39:09Z] INFO mailer - Sent email to u***@example.com subject="Reset password" elapsed_ms=238
+[2025-07-08 21:39:10.222] ERROR worker - Uncaught exception:
+    java.lang.RuntimeException: Boom
+        at com.app.Service.run(Service.java:42)
+        at java.base/java.lang.Thread.run(Thread.java:1589)
+[2025-07-08 21:39:11.000] INFO api - Heartbeat OK
+[2025-07-08 21:39:11.000] INFO (message repeated 5 times): Heartbeat OK
